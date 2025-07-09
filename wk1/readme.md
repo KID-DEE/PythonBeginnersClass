@@ -1,1 +1,2 @@
 ## WEEK 1: Introduction To Python Learning
+Hi my name is Daliya an im a grade 10 student. i want to use this medium to document my progress on oython learning and boost my morale as o begin this new era journey
