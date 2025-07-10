@@ -102,14 +102,15 @@ else:
 print("\n")
 m= input("enter number:")
 n= input("please enter number:")
-z=m
-m=n
-n=z
-z=z
-m=n
-n=m
+print("m =", m)
+print("n =", n)
 print(m)
 print(n)
+tem = m
+m = n
+n = tem
+print("m =", m)
+print("n =", n)
 print("\n")
 marks = input("please enter mark:")
 if marks>"80":
