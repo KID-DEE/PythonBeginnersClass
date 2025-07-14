@@ -19,16 +19,19 @@ d =0
 #   name = input("please enter your name:  ")
 #   print(d,"",name)
 #   d +=1
- 
-#   if d>=2:
+#   d +=step
+#   if d>=12:
 #    break
 #   print("you entered value is:", number)
 
-#iimplement continue, skip a line that meet the if condition criteria
-while d<=int(number):
- name = input("please enter your name:")
- d+=1
- if d==2:     
-     continue
- print(d,"",name)
-print("you entered value is:", number)
+# #iimplement continue, skip a line that meet the if condition criteria
+# while d<=int(number):
+#  name = input("please enter your name:")
+#  d+=1
+#  d+=step
+#  if d==2:     
+#      continue
+#  print(d,"",name)
+# print("you entered value is:", number)
+
+# decrement a value
