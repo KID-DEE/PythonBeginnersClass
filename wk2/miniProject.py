@@ -27,7 +27,7 @@ Logic, Assignment], simple if-else.
 """
 
 
-print("Daliya's Project")
+print("Daliya's Project")#this is from no.1
 print("Good Day")
 name = input("please enter your full name:")
 print("welcome",name,"lets perform some operations")
@@ -38,49 +38,49 @@ Difference = int(x) - int(y)
 print ("Result of Difference =",Difference)
 product = float(x)*float(y)
 print("Result of Product is",int(product))
-print ("Result for Division =",int(x)/int(y) )
+print ("Result for Division =",int(x)/int(y) )#to no.5
 print("\n")
-age = input("please enter you age:")
-if age > "18":
+age = int(input("please enter you age:"))
+if age > 18:
     print("You are an Adult")
 else:
-    print("You are a Minor")
+    print("You are a Minor")#no.6
 print("\n")
-math_score= input("please enter Maths score:")
-english_score = input("please enter English score:")
-if math_score >"50":
+math_score= int(input("please enter Maths score:"))
+english_score = int(input("please enter English score:"))
+if math_score >50:
     print("You have passed ")
 else:
     print("You have failed, try again next year")
-if english_score >"50":
+if english_score >50:
     print("You have passed ")
 else:
- print("You have failed, try again next year")
+ print("You have failed, try again next year")#no.7
 print("\n")
 is_logged_in = True
 print("is not logged in:",not is_logged_in )
 is_raining = True
 has_umbrella = False
-print("can i go out:", is_raining or has_umbrella )
+print("can i go out:", is_raining or has_umbrella )#no.8
 print("\n")
-score = input("please enter score:")
-if score > "50":
+score = int(input("please enter score:"))
+if score > 50:
     print("pass")
 else:
     print("fail")
     print("\n")
-temp= input("please enter temperature:")
-if temp> "30":
+temp= int(input("please enter temperature:"))
+if temp > 30:
     print("Hot")
 else:
     print("Cool")
 print("\n")
-count =input("please enter number:")
-count+="10"
+count =int(input("please enter number:"))
+count+=10
 print(count)
 print("\n")
-a = input("please enter number:")
-b = input("please enter number:")
+a = int(input("please enter number:"))
+b = int(input("please enter number:"))
 if a == b:
     print("they are equal")
 else:
@@ -92,11 +92,13 @@ if status =="active":
 else:
     print("Access denied")
 print("\n")
-time= input("what time is it?")
-if time<"12":
+time= int(input("what time is it?"))
+if time<1200:
     print("good morning")
-elif time>="1200":
+elif time>=1200:
     print("good afternoon")
+elif time >=1600:
+    print("good evening" )
 else:
     print("good night")
 print("\n")
@@ -106,14 +108,16 @@ print("m =", m)
 print("n =", n)
 print(m)
 print(n)
-tem = m
+
+q = m
 m = n
-n = tem
+n = q
 print("m =", m)
 print("n =", n)
+
 print("\n")
-marks = input("please enter mark:")
-if marks>"80":
+marks = int(input("please enter mark:"))
+if marks>80:
     print("excellent")
 else:
     print("keep trying")
@@ -140,3 +144,5 @@ elif question=="5":
     print("alrigt, see you next time")
 else:
     print("hmmmm..... nawa 4 u oooohh")
+
+    
