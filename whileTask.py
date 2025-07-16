@@ -52,7 +52,7 @@ if guess!= number:
     print("Sorry, the number was", number)
 print("\n no.2")
 password = "Dali2000"
-while True:
+while tries<5:
     num =str(input("please enter your password:"))
     if num ==password:
         print("welcome user")
@@ -61,8 +61,8 @@ while True:
         print("wrong password \n please try again")
 print("\n no.3")
 balance =100000
-we =2
-while we<=2:
+tries =0
+while tries<=2:
   print("\n1. Withdraw")
   print("2. Deposit")
   print("3. Check Balance")
@@ -70,16 +70,20 @@ while we<=2:
 
   choice = input("Enter choice: ")
   if choice == '1':
-   amount = int(input("Withdraw amount: "))
-   if amount <= balance:
+   amount = float(input("Withdraw amount: "))
+   if float(amount) <= float(balance):
             balance -= amount
             print("your account balance is : ",balance)
+   else:
+    amount>balance
+   print("Insuficient funds")
   elif choice == '2':
-        amount = int(input("Deposit amount: "))
+        amount = float(input("Deposit amount: "))
         balance += amount
+        print("deposit successful")
         print("your acount balance is: ",balance)
 
   elif choice == '3':
-    print("Balance:", balance)
+    print("your Balance is:", balance)
   elif choice == '4':
    break
