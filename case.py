@@ -26,6 +26,21 @@ match value:
       print("Your value is less than 10: J")
     case value if 11<=value and value <=20:
      print("Your value is less than 10: I")
+    case value if 21 <= value and value<=30:
+     print("Hi your grade value is :H")
+    case value if 31 <= value and value <=40:
+     print("Hi your grade value is:G")
+    case value if 41 <= value and value <=50:
+     print("Hi yor grade value is:F")
+    case value if 51 <= value and value <=60:
+     print("Hi your grade value is:E")
+    case value if 61 <= value and value <=70:
+     print("Hi your grade value is:D") 
+    case value if  71<=value and value <=80:
+     print("Hi your grade value is: C") 
+    case value if 81<=value and value <=90:
+     print("Hi your grade value is: B") 
+    case value if 91<=value and value <=100:
+     print("Hi your grade value is: A")
     case _:
      print("Wrong value please enter right")
-      
