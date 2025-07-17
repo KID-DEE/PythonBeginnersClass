@@ -23,4 +23,4 @@ try:
     else:
         print("Invalid Syntax")
 except:ValueError
-print("Invalid syntax")
+print("Syntax Error")
