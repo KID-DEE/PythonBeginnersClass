@@ -82,7 +82,6 @@ while tries<=2:
         balance += amount
         print("deposit successful")
         print("your acount balance is: ",balance)
-
   elif choice == '3':
     print("your Balance is:", balance)
   elif choice == '4':

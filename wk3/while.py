@@ -6,7 +6,8 @@ Implementing "while" in python
 """
 
 number = float(input("please enter the number of iteraction you want to perform:"))
-d =0
+step=float(input("please enter the  increment value for the iteraction"))
+d=float(input("please enter the initialization value for the iteraction"))
 # while d<=int(number):
 #  name = input("please enter your name:")
 #  print(d,"",name)

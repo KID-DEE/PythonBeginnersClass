@@ -45,65 +45,66 @@ choice = int(input("Select an option:\n1. Buy Airtime\n2. Buy Data\n3. Check Bal
 match choice:
     case 1:
         amount = input("Enter airtime amount: ")
-        print("Airtime of" ,amount, "bought.")
+        print("Airtime of","₦",amount, "bought.")
     case 2:
         amount = input("Enter data amount: ")
-        print("Data of" ,amount, "bought.")
+        print("Data of" ,amount,"GB", "bought.")
     case 3:
-        print("Balance: ₦1,500 and 2.5GB data.")
+        print(" Your account balance: ₦1,500 and data bundle:2.5GB data expires on the 12/dec/2025.")
     case 4:
         number = input("Enter number: ")
-        amount = input("Enter amount:")
+        amount = input("Enter amount: ")
         print(amount,"sent to" ,number)
     case _:
         print("Invalid choice.")
 
-
-print("Car Rentals")
+print("\n")
+print("Welcome to D's Car Rentals")
+print("We Offer:\nHonda at ₦1200/day\n Toyota at ₦5000/day\nHonda at ₦6500/day")
 honda=1200
 toyota=5000
 BMW=6500
-car= str(input("Please Choose a Car company \nHonda \nToyota \nBMW\nEnter here:"))
+car= int(input("Please Choose a Car company \n1.Honda \n2.Toyota \n3.BMW\nEnter here:"))
 match car:
-    case car if car== honda:
+    case  1:
         days=int(input("For how may days will you be renting this car: "))
         cost=honda*days
-        print("The price is:",cost)
-    case car if car==toyota:
+        print(f"The price for BMW at",days,"days", "is:",cost)
+    case 2:
         days=int(input("For how may days will you be renting this car: "))
         cost=toyota*days
-        print("The price is:",cost)
-    case car if car== BMW:
+        print(f"The price for BMW at",days,"days", "is:",cost)
+    case 3:
         days=int(input("For how may days will you be renting this car: "))
-        cost=honda*days
-        print("The price is:",cost)
+        cost=BMW*days
+        print(f"The price for BMW at",days,"days", "is:",cost)
     case _:
         print("Choose from available options")
 
-    
-print
+print("\n")
+print("Electricity Tarriff")
 print("Customer Categories:\n1. Residential - 209 \n2. Commercial - 4020\n3. Industrial - 70209")
-category = input("Enter category \n1.Residential, \n2.Commercial, \n3.Industrial\nenter here: ")
+category = int(input("Enter category \n1.Residential, \n2.Commercial, \n3.Industrial\nenter here: "))
 units = float(input("Enter number of units to buy: "))
 
 match category:
-    case "1":
+    case 1:
         rate=209 
         bill = rate* units
-        print("Total electricitybill:",bill)
-    case "2":
+        print(f"Total electricitybill for",units,"units","is:",bill)
+    case 2:
         rate =4020
         bill = rate* units
-        print("Total electricitybill:",bill)
-    case "3":
+        print(f"Total electricitybill for",units,"units","is:",bill)
+    case 3:
        rate = 70209
        bill = rate* units
-       print("Total electricitybill:",bill)
+       print(f"Total electricitybill for",units,"units","is:",bill)
     case _:
      print("Invalid category.")
 
-
-c=str(input("Please your Departmental code e.g\n1.CSC \n2.EEE \n3.MEC \n4.ACC 5.BAM \nEnter here: "))
+print("\n")
+c=str(input("Please your Departmental code e.g\n1.CSC \n2.EEE \n3.MEC \n4.ACC \n5.BAM \nEnter here: "))
 match c:
    case c if c=="CSC":
       print("your courses are:\nCSC101-Introduction to Computer Science\nCSC201-Programming with Python\nCSC203-Data Structures and Algorithms" \
@@ -114,13 +115,15 @@ match c:
       print("your courses are:\nMEC101-Engineering Drawing\nMEC203-Thermodynamics\nMEC305-Fluid Mechanics\nMEC403-Machine Design\nMEC405-Heat Transfer")
    case c if c=="ACC":
        print("ACC101-Financial Accounting" \
-"ACC201-Cost Accounting"
-"ACC301-Taxation"
-"ACC303-Auditing"
-"ACC401-Management Accounting")
+"\nACC201-Cost Accounting"
+"\nACC301-Taxation"
+"\nACC303-Auditing"
+"\nACC401-Management Accounting")
    case c if c=="BAM":
-      print("your courses are:BUS101 – Principles of Management" \
-"BUS203-Human Resource Management"
-"BUS303-Strategic Management"
-"BUS305-Organizational Behaviour"
-"BUS40-Business Policy")
+      print("your courses are:BUS101-Principles of Management" \
+"\nBUS203-Human Resource Management"
+"\nBUS303-Strategic Management"
+"\nBUS305-Organizational Behaviour"
+"\nBUS40-Business Policy")
+   case _:
+        print("Invalid Choice")
