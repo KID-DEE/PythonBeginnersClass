@@ -3,8 +3,12 @@ print("I am your Simple Calculator")
 print("Good Day")
 name = input("please enter your full name:")
 print("welcome",name,"lets perform some operations")
-main=input("Select Operation: \n1,Addition \n2, Substraction \n3,Multiplication" \
-" \n4,Division \n5,Modulus \n6,Floor division \ninput here: ")
+try:
+    main=input("Select Operation: \n1,Addition \n2, Substraction \n3,Multiplication" \
+    " \n4,Division \n5,Modulus \n6,Floor division \ninput here: ")
+except:ValueError
+print("Invalid option")
+
 try:
     x = int(input("Enter a number:"))
     y = int(input("Enter second number: "))

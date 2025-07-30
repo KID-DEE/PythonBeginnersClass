@@ -135,7 +135,7 @@ def attendance_percentage():
     present_days=int(input("Please enter the number of days presesnt at work: "))
     total_days=200
     res=total_days-present_days
-    percentage=res/total_days*100
+    percentage=present_days/total_days*100
     print(f"your work percentage is:{percentage}%")
 attendance_percentage()
 
