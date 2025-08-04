@@ -11,14 +11,17 @@
 """
 scoreslist=[]
 tries=0
-while tries<=20:
-    student=int(input("Enter student scores: "))
-    scoreslist.append(student)
-    print(scoreslist)
-    tries+=1
-    if tries==20:
-        break 
-
+num=int(input("How many students do you want to enter their scores:"))
+while tries<=num:
+    try:
+        student=int(input("Enter student scores: "))
+        scoreslist.append(student)
+        print(scoreslist)
+        tries+=1
+        if tries==num:
+            break 
+    except ValueError:
+        print("Please enter number")
 
 print("\n Sorting the list")
 scoreslist.sort()
@@ -33,15 +36,18 @@ newlist=scoreslist[:]
 print(newlist)
 
 print("\n Deleting scores on index 5,9,17")
-scoreslist.sort()
-scoreslist.pop(5)
-scoreslist.pop(9)
-scoreslist.pop(17)
-print(scoreslist)
+index=int(input("Please enter your value to remove: "))
+num2=int(input("Please enter the number of scores: "))
+if index < num2:
+    scoreslist.remove(index)
+else:
+    print("Index out of range")
 
 print("\n printing 95 if any")
-for x in scoreslist:
-    if x==95 in scoreslist:
-        print("here are those who scored:",x)
-    else:
-        print("There is no one who scored 95")
+x=int(input("please enter what score to print: ")) 
+if x in scoreslist:
+    print("this is the score:",x)
+else:
+    print("There is no one who scored",x)
+
+
