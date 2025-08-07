@@ -18,8 +18,10 @@ else:
         
 print("The age list is:", age_list)
 
-# f= open("myfiles.txt", "w")
+f= open("myfiles.txt", "w")
 
 with open("myfiles.txt", "a") as f:
         f.write(str(age_list))
         f.close()
+
+

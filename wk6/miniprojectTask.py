@@ -3,7 +3,7 @@ print("Daliya's Project")#this is from no.1
 print("Good Day")
 name = input("please enter your full name:")
 print("welcome",name,"lets perform some operations")
-with open("mini project task solutions.txt", "x") as f:
+with open("MiniProjectTaskSolutions.txt", "x") as f:
     str(name)
     f.write(f"print Daliyas Project\n Good Day{name}\n  welcome {name} lets perform some operations")
     f.close()
@@ -225,4 +225,3 @@ else:
     print("hmmmm..... nawa 4 u oooohh")
     with open("mini project task solutions.txt", "a") as f:
         f.write("\nhmmmm..... nawa 4 u oooohh")
-
