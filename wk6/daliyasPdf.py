@@ -7,5 +7,3 @@ with open("DaliyasPdf.pdf", "x") as pdf:
 with open("DaliyasPdf.pdf", "r") as pdf:
     print(pdf.read())
 
-
-"Daliya"

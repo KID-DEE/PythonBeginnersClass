@@ -17,6 +17,7 @@ print(f"This is the data from the file: {data2}")
 
 
 #"""Read manipulation """
+
 input_file='myfile.txt'
 output_file='output.txt'
 

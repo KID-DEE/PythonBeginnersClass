@@ -122,7 +122,7 @@
 # Reorder a group of words so that shorter ones appear first, preserving original order among equal lengths.
 
 # Alphabet Completeness Inspector
-# Write code that verifies if a passage includes every letter of the alphabet at least once. If not, list the missing ones.
+# Write code that verifies if a passage includes every letter of the alphabet at least once. If not, list the missing ones.
 # """
 
 
@@ -168,7 +168,7 @@
 
 # print("\n7..Character Frequency")
 # sentence=input("enter a sentence: ")
-# sentence=sentence.count('',++1)
+# sentence=sentence.count('',+1)
 # print(f"the new sentence is:{sentence} ")
 
 # print('\n8.email domain')
@@ -184,16 +184,54 @@
 
 
 
-import email
-
-
-print("\n9.startswith and endswith")
-sentence=input("Ente a sentence: ") 
-sentence=sentence.startswith("Hello") and sentence.endswith("World")
-print(sentence)
+# print("\n9.startswith and endswith")
+# sentence=input("Ente a sentence: ") 
+# sentence=sentence.startswith("Hello") and sentence.endswith("World")
+# print(sentence)
 
 # print("\n10.Convert to Leetspeak")
-# A=4, E=3, I=1, O=0, S=5, T=7
+# # A=4, E=3, I=1, O=0, S=5, T=7
+# sentence = input()
+# leetspeak = sentence.replace("A", "4").replace("E", "3").replace("I", "1").replace("O", "0").replace("S", "5").replace("T", "7")
+# print(f"Leetspeak: {leetspeak}")
+
+# print("\n11.Word Count")
+# sentence = input("Enter a sentence: ")
+# words = sentence.split()
+# word_count = len(words)
+# print(f"The number of words in the sentence is: {word_count}")
+
+# print("\n12.Print Every Second Character")
+# string = input("Enter a string: ")
+# secondcharacter = string[::2]
+# print(secondcharacter)
+
+
+print("\n13.Find and Replace All Occurrences of punctuations")
+sentence = input("Enter a sentence: ")
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&'''
+for punctuation in punctuations:
+    sentence = sentence.replace(punctuation, '')
+    print(sentence)
+
+print("\n14.Getting Initials")
+sentence = input("Enter a Name: ")
+# for letters in sentence:
+    
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+print("\n16.swapcase")
